@@ -829,6 +829,7 @@ select:focus {
     }
     .content {
         justify-content: space-between;
+        padding-top: 50px;
     }
     .container {
         padding-left: 5vw;
@@ -884,6 +885,7 @@ select:focus {
     }
     .content {
         justify-content: space-between;
+        padding-top: 50px;
     }
     .container {
         padding-left: 5vw;
@@ -978,7 +980,7 @@ select:focus {
         margin-left: 0;
     }
     .additional-content {
-        margin-left: 20px;
+        margin: 0 auto;
     }
     .description {
         margin-top: 25px;
@@ -1002,6 +1004,97 @@ select:focus {
         display: block;
         margin-bottom: 20px;
     }
+    .footer {
+        margin-top: 40px;
+    }
+    .copywriting-text {
+        margin-top: 50px;
+    }
 }
 
-@media (max-width: 640px) and (orientation: landscape) {}
+@media (max-width: 640px) and (orientation: landscape) {
+    .content {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    .welcome-title {
+        width: 100%;
+    }
+    .trends {
+        flex-wrap: wrap;
+    }
+    .trend-item {
+        flex-basis: auto;
+        width: calc(50% - 2px);
+    }
+    .trend-item:nth-of-type(odd) {
+        margin: 0 2px 4px 0;
+    }
+    .trend-item:nth-of-type(even) {
+        margin: 0 0 4px 2px;
+    }
+    .container {
+        padding-right: 4vw;
+        padding-left: 4vw;
+    }
+    .content {
+        padding-top: 30px;
+    }
+    .article-preview {
+        width: 100%;
+    }
+    .article-preview-img {
+        width: 100%;
+    }
+    .article-item {
+        display: block;
+    }
+    .article-item:nth-of-type(n+2) {
+        margin-top: 35px;
+    }
+    .article-list {
+        width: 100%;
+    }
+    .article-item-name {
+        margin-bottom: 25px;
+    }
+    .article-info {
+        margin-left: 0;
+    }
+    .additional-content {
+        margin: 0 auto;
+    }
+    .description {
+        margin-top: 25px;
+    }
+    .description::after {
+        content: "";
+        margin: 22px auto 40px;
+        height: 3px;
+        width: 100%;
+        background-color: #eeeeee;
+        display: block;
+    }
+    .subtitle {
+        padding-top: 43px;
+    }
+    .products {
+        display: block;
+    }
+    .product {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .footer {
+        margin-top: 40px;
+    }
+    .copywriting-text {
+        margin-top: 50px;
+    }
+}
